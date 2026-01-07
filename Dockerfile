@@ -1,7 +1,7 @@
 # docker build -t mosazhaw/djl-serving-consumer .
 # docker push mosazhaw/djl-serving-consumer
 
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:25-jdk-noble
 
 # Copy Files
 WORKDIR /usr/src/app
