@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-
+ 
 <head>
     <title>Image Classification (with DJL Serving)</title>
     <meta charset="utf-8" />
@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" async></script>
 </head>
-
+ 
 <body>
-
+ 
     <div class="main-container">
         <div class="text-center">
             <h1>Image Classification</h1>
-            <p class="subtitle">Deep Learning with DJL Serving · by mosa</p>
+            <p class="subtitle">Deep Learning with DJL Serving · by bogonoa1</p>
         </div>
-
+ 
         <form>
             <div class="upload-section" onclick="document.getElementById('image').click()">
                 <span class="upload-icon">📁</span>
@@ -28,12 +28,12 @@
                     onchange="checkFiles(this.files);" style="display: none;">
             </div>
         </form>
-
+ 
         <div id="loadingArea" style="display: none; text-align: center;">
             <div class="loading-spinner"></div>
             <p class="loading-text">Analysiere Bild...</p>
         </div>
-
+ 
         <div id="answerPart" style="display: none;">
             <div class="results-container">
                 <div class="results-card">
@@ -49,7 +49,7 @@
                     </template>
                     <div id="answer"></div>
                 </div>
-
+ 
                 <div class="results-card">
                     <div class="card-title">🖼️ Analysiertes Bild</div>
                     <img id="preview" class="image-preview" src="#" alt="preview" />
@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-
+ 
 </body>
-
+ 
 </html>
