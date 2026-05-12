@@ -26,3 +26,7 @@ jobs:
         run: |
           docker build -t lilgoethe/djl-serving-consumer:latest .
           docker push lilgoethe/djl-serving-consumer:latest
+
+      - name: Deploy to Azure Web App
+        run: |
+          curl -X POST "${{ secrets.AZURE_WEBHOOK_URL_SERVING }}"
